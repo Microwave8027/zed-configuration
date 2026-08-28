@@ -7,7 +7,7 @@
 // from the command palette.
 [
   {
-    "context": "VimControl && !menu",
+    "context": "!(vim_mode == insert) && !menu",
     "bindings": {
       "space f f": "file_finder::Toggle",
     },
@@ -25,7 +25,7 @@
     }
   },
   {
-      "context": "VimControl && !menu",
+      "context": "!(vim_mode == insert) && !menu",
       "bindings": {
         "space f e": "project_panel::ToggleFocus"
       }
@@ -53,7 +53,7 @@
       }
   },
   {
-    "context": "VimControl && !menu",
+    "context": "!(vim_mode == insert) && !menu",
     "bindings": {
       "space a": "workspace::ToggleLeftDock",
       "space t" : "workspace::NewTerminal"
