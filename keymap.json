@@ -1,0 +1,71 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "space f f": "file_finder::Toggle",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space w": "workspace::Save"
+    }
+  },
+  {
+      "context": "VimControl && !menu",
+      "bindings": {
+        "space f e": "project_panel::ToggleFocus"
+      }
+    },
+
+    {
+      "context": "ProjectPanel && not_editing",
+      "bindings": {
+        "j": "menu::SelectNext",
+        "k": "menu::SelectPrevious",
+        "h": "project_panel::CollapseSelectedEntry",
+        "l": "project_panel::ExpandSelectedEntry",
+        "o": "project_panel::OpenPermanent",
+        "enter": "project_panel::OpenPermanent",
+
+        "a": "project_panel::NewFile",
+        "A": "project_panel::NewDirectory",
+        "d": "project_panel::Trash",
+        "r": "project_panel::Rename",
+        "x": "project_panel::Cut",
+        "c": "project_panel::Copy",
+        "p": "project_panel::Paste",
+
+        "space f e": "workspace::ToggleRightDock",
+      }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "space a": "workspace::ToggleLeftDock",
+      "space t" : "workspace::NewTerminal"
+    }
+  },
+  {
+    "context": "VimControl",
+    "bindings": {
+      "space x": "pane::CloseActiveItem",
+      "space l": "pane::ActivateNextItem",
+      "space h": "pane::ActivatePreviousItem",
+      "space q": "pane::CloseAllItems"
+    },
+  },
+]
