@@ -27,7 +27,7 @@
   {
       "context": "!(vim_mode == insert) && !menu",
       "bindings": {
-        "space f e": "project_panel::ToggleFocus"
+        "space e": "project_panel::ToggleFocus"
       }
     },
 
@@ -49,7 +49,7 @@
         "c": "project_panel::Copy",
         "p": "project_panel::Paste",
 
-        "space f e": "workspace::ToggleRightDock",
+        "space e": "workspace::ToggleRightDock",
       }
   },
   {
@@ -63,8 +63,8 @@
     "context": "VimControl",
     "bindings": {
       "space x": "pane::CloseActiveItem",
-      "space l": "pane::ActivateNextItem",
-      "space h": "pane::ActivatePreviousItem",
+      "space n": "pane::ActivateNextItem",
+      "space b": "pane::ActivatePreviousItem",
       "space q": "pane::CloseAllItems"
     },
   },
